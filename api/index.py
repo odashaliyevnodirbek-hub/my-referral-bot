@@ -10,7 +10,7 @@ app = Flask(__name__)
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 SUPABASE_URL = os.environ.get("SUPABASE_URL")
 SUPABASE_KEY = os.environ.get("SUPABASE_ANON_KEY")
-CHANNEL_ID = "@YourChannelHandle" # Change this to your channel's username
+CHANNEL_ID = "@english_uyda" # Change this to your channel's username
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 telegram_app = Application.builder().token(TOKEN).build()
